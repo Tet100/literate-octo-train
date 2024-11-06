@@ -14,4 +14,4 @@ chat = llm.create_chat_completion(
 	]
 )
 print("GOIDA")
-print(chat["choices"][0]["messages"])
+print(chat["choices"][0].messages)
