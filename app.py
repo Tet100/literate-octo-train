@@ -1,4 +1,15 @@
-# Use a pipeline as a high-level helper
-from transformers import pipeline
+from llama_cpp import Llama
 
-pipe = pipeline("text-generation", model="MarinaraSpaghetti/NemoMix-Unleashed-12B")
+llm = Llama.from_pretrained(
+	repo_id="tannedbum/L3-Nymeria-v2-8B-iGGUF",
+	filename="L3-Nymeria-v2-8B-Q3_K_M.gguf",
+)
+
+llm.create_chat_completion(
+	messages = [
+		{
+			"role": "user",
+			"content": "What is the capital of France?"
+		}
+	]
+)
