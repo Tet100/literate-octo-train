@@ -5,7 +5,7 @@ llm = Llama.from_pretrained(
 	filename="L3-Nymeria-v2-8B-Q3_K_M.gguf",
 )
 
-llm.create_chat_completion(
+chat = llm.create_chat_completion(
 	messages = [
 		{
 			"role": "user",
@@ -13,3 +13,4 @@ llm.create_chat_completion(
 		}
 	]
 )
+print(chat.messages.content[0])
