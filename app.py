@@ -13,4 +13,4 @@ chat = llm.create_chat_completion(
 		}
 	]
 )
-print(chat.messages.content[0])
+print(chat)
