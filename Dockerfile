@@ -1,4 +1,5 @@
 FROM python:3.11.10-bookworm
+RUN apt update
 RUN apt install clang
 RUN useradd -m -u 1000 user
 USER user
