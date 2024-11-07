@@ -1,4 +1,12 @@
 from llama_cpp import Llama
+from fastapi import FastAPI
+
+app = FastAPI()
+
+@app.get("/")
+def greet_json():
+        return {"Hello": "World!"}
+
 def test():
     llm = Llama.from_pretrained(
     	repo_id="tannedbum/L3-Nymeria-v2-8B-iGGUF",
