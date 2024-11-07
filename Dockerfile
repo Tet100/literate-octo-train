@@ -2,7 +2,9 @@ FROM python:3.11.10-bookworm
 WORKDIR /app
 
 RUN apt update -y 
-RUN apt install clang, wget, unzip -y
+RUN apt install clang -y
+RUN apt install wget -y
+RUN apt install unzip -y
 RUN wget https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.zip
 RUN unzip ngrok-v3-stable-linux-amd64.zip && mv ngrok /usr/local/bin
 RUN python -m pip install --upgrade pip
