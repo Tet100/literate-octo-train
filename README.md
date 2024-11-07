@@ -3,7 +3,7 @@ title: TestONCPU
 emoji: 📉
 colorFrom: green
 colorTo: purple
-sdk: static
+sdk: streamlit
 sdk_version: 5.5.0
 app_file: main.sh
 pinned: true
