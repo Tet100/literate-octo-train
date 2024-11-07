@@ -1,4 +1,4 @@
-FROM docker pull python:3.11.10-bullseye
+FROM python:3.11.10-bullseye
 RUN useradd -m -u 1000 user
 USER user
 WORKDIR /app
