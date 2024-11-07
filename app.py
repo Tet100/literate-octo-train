@@ -1,17 +1,17 @@
 from llama_cpp import Llama
+def test()
+    llm = Llama.from_pretrained(
+    	repo_id="tannedbum/L3-Nymeria-v2-8B-iGGUF",
+    	filename="L3-Nymeria-v2-8B-Q3_K_M.gguf",
+    )
 
-llm = Llama.from_pretrained(
-	repo_id="tannedbum/L3-Nymeria-v2-8B-iGGUF",
-	filename="L3-Nymeria-v2-8B-Q3_K_M.gguf",
-)
-
-chat = llm.create_chat_completion(
-	messages = [
-		{
-			"role": "user",
-			"content": "What is the capital of France?"
-		}
-	]
-)
-print("GOIDA")
-print(chat["choices"][0].messages)
+    chat = llm.create_chat_completion(
+    	messages = [
+    		{
+    			"role": "user",
+    			"content": "What is the capital of France?"
+    		}
+    	]
+    )
+    print("GOIDA")
+    print(chat["choices"][0].messages)
