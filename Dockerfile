@@ -6,7 +6,7 @@ RUN useradd -m -u 1000 user
 USER user
 WORKDIR /app
 COPY ./requirements.txt requirements.txt
-COPY ./app.py app.py
+COPY ./main.py main py
 RUN pip install --no-cache-dir --upgrade -r requirements.txt
 RUN pip install uvicorn
-CMD ["python", "app.py"]
+CMD ["python", "main.py"]
