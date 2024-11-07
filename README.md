@@ -5,7 +5,7 @@ colorFrom: green
 colorTo: purple
 sdk: docker
 sdk_version: 0
-app_file: main.sh
+app_file: app.py
 short_description: Test
 ---
 
