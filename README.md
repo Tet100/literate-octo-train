@@ -5,7 +5,7 @@ colorFrom: green
 colorTo: purple
 sdk: streamlit
 sdk_version: 5.5.0
-app_file: main.sh
+app_file: app.py
 short_description: Test
 ---
 
