@@ -3,8 +3,8 @@ title: TestONCPU
 emoji: 📉
 colorFrom: green
 colorTo: purple
-sdk: streamlit
-sdk_version: 1.40.0
+sdk: docker
+sdk_version: 0
 app_file: main.sh
 short_description: Test
 ---
