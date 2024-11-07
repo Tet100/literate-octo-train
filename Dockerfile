@@ -5,4 +5,5 @@ WORKDIR /app
 COPY ./requirements.txt requirements.txt
 COPY ./app.py app.py
 RUN pip install --no-cache-dir --upgrade -r requirements.txt
+USER user
 CMD ["python3", "./app.py"]
