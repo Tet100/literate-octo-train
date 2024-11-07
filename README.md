@@ -6,7 +6,6 @@ colorTo: purple
 sdk: streamlit
 sdk_version: 5.5.0
 app_file: main.sh
-pinned: true
 short_description: Test
 ---
 
