@@ -3,8 +3,8 @@ title: TestONCPU
 emoji: 📉
 colorFrom: green
 colorTo: purple
-sdk: gradio
-sdk_version: 1.39.0
+sdk: docker
+sdk_version: 5.5.0
 app_file: main.sh
 pinned: true
 short_description: Test
