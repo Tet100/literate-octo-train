@@ -1,7 +1,6 @@
 FROM python:3.11.10-bullseye
 RUN useradd -m -u 1000 user
 USER user
-ENV PATH="/home/user/.local/bin:$PATH
 WORKDIR /app
 COPY --chown=user ./requirements.txt requirements.txt
 COPY --chown=user ./app.py app.py
