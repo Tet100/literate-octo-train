@@ -3,7 +3,7 @@ title: TestONCPU
 emoji: 📉
 colorFrom: green
 colorTo: purple
-sdk: streamlit
+sdk: gradio
 sdk_version: 1.39.0
 app_file: main.sh
 pinned: true
