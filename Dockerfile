@@ -5,8 +5,8 @@ RUN apt install clang -y
 RUN useradd -m -u 1000 user
 USER user
 WORKDIR /app
-COPY --chown=user ./requirements.txt requirements.txt
-COPY --chown=user ./app.py app.py
+COPY ./requirements.txt requirements.txt
+COPY ./app.py app.py
 RUN pip install --no-cache-dir --upgrade -r requirements.txt
 RUN pip install uvicorn
 CMD ["python", "app.py"]
