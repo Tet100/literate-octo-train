@@ -3,3 +3,5 @@ tensorflow
 torch --index-url https://download.pytorch.org/whl/cpu
 tf-keras
 llama-cpp-python --extra-index-url https://abetlen.github.io/llama-cpp-python/whl/cpu
+fastapi
+unicorn
