@@ -5,7 +5,7 @@ app = FastAPI()
 
 @app.get("/")
 def greet_json():
-        return {"Hello": "World!"}
+        return {"Great": "Hello World!"}
 
 def test():
     llm = Llama.from_pretrained(
@@ -26,4 +26,9 @@ def test():
 if __name__ == "__main__":
     print("Start")
     uvicorn.run("main:app", host="0.0.0.0", port=7860)
+    try:
+       print(uvicorn.port)
+    except:
+        print("no")
+    
  
