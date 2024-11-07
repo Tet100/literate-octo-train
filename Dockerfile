@@ -1,6 +1,6 @@
 FROM python:3.11.10-bookworm
-RUN apt update
-RUN apt install clang
+RUN apt update -y
+RUN apt install clang -y
 RUN useradd -m -u 1000 user
 USER user
 WORKDIR /app
